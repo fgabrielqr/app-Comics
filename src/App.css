@@ -173,7 +173,7 @@
 }
 
 .card__name {
-  width: 18vw;
+  width: 92.2%;
   height: 9vh;
   margin-top: -1vh;
   padding: 0 1vh;
@@ -388,10 +388,18 @@
   }
 
   .card__name {
-    width: 23.1vh;
-    height: 13vh;
-    margin-top: -6vh;
+    height: 9vh;
+    margin-top: -1vh;
     font-size: 1rem;
+  }
+
+  .card__name p {
+    overflow: hidden;
+    max-width: 40vw;
+    font-weight: 600;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .modal__cards {
