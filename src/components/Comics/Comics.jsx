@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import moment from "moment";
 import { IoMdCloseCircle } from "react-icons/io";
+import Map from "../Map/Map";
 
-// import "./Characters.css";
 
 const Comics = (props) => {
   const [isOpen, setIsOpen] = useState("");
@@ -29,17 +29,6 @@ const Comics = (props) => {
     }
   };
 
-  // SISTEMA DE FAVORITOS
-  // const handleFav = (e) => {
-  //   e.preventDefault();
-  //   setFav(props.id);
-
-  //   var exists = localStorage.getItem("favoritos");
-  //   exists = exists ? exists.split("-") : [];
-  //   exists.push(fav);
-  //   localStorage.setItem("favoritos", exists.toString());
-  // };
-
   return (
     <div>
       {/* MODAL HIDDEN  */}
@@ -62,9 +51,7 @@ const Comics = (props) => {
                   {props.description}
                   {props.description ? null : "HQ sem descrição!"}{" "}
                 </p>
-                <button
-                // onClick={handleFav}
-                >
+                <button onClick={Map}>
                   <p>Enviar Presente</p>
                 </button>
               </div>

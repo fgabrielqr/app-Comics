@@ -65,7 +65,7 @@ const Header = () => {
               title={data.title}
               description={data.description}
               thumb={data.thumbnail.path}
-            // date={data.modified}
+              date={data.modified}
             />
           );
         })}
